@@ -222,7 +222,7 @@ class TicTacToe {
 
         this.movePrompt.setAttribute('class', '');
         this.currentPlayer = this.player1;
-        this.currentPlayerToken.setAttribute('class', `fas fa-${this.currentPlater.token}`);
+        this.currentPlayerToken.setAttribute('class', `fas fa-${this.currentPlayer.token}`);
     }
     start() {
         console.log('start game');
