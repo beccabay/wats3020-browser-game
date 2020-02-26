@@ -32,7 +32,7 @@ class TicTacToe {
         this.winnerToken = document.querySelector('#winner-token');
         this.drawScreen = document.querySelector('#draw-screen');
         // Initialize an Array representing the starting state of the game board.
-        // This is provided for you. We can access the spaces on the board using
+        // This is provided for you. We can access the paces on the board using
         // (X, Y) coordinates as `this.gameState[x][y]`, which is how the game
         // will check to see if the winner is known.
         this.gameState = [
@@ -139,7 +139,7 @@ class TicTacToe {
         let tile_y = event.target.dataset.y;
 
         if (!this.gameState[tile_x][tile_y]) {
-            this.gameState[tile_x, tile_y] = this.currentPlayer.token;
+            this.gameState[tile_x][tile_y] = this.currentPlayer.token;
             event.target.setAttribute('class', `tile played fas fa-${this.currentPlayer.token}`);
         } else {
             return false;
